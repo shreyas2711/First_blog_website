@@ -32,7 +32,6 @@
 
     <section class="hero">
         <div class="left">
-            <!-- <img src="images/rafale.jpg" alt=""> -->
         </div>
         <dev class="right">
             <div class="content-box">
@@ -49,19 +48,19 @@
         <div class="blog">
 
         <div class="blog-post">
-         <div class="thumbnail">
+        <div class="thumbnail">
         <img src="images/zephyrus22.jpg" alt="">
          </div>
          <div class="blog-content">
         <span>Laptops - 12/2/2021</span>
-        <h3>Asus zephyrus22 </h3>
+        <a href="blog1.html"><h3>Asus zephyrus22 </h3></a>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
-          <a href="">Read more</a>
+          <a href="blog1.html">Read more</a>
 
           </div>
         </div>
         <div class="blog-post">
-            <div class="thumbnail">
+        <div class="thumbnail">
            <img src="images/iphone14.jpg" alt="">
             </div>
             <div class="blog-content">
@@ -72,6 +71,7 @@
    
              </div>
            </div>
+        
            <div class="blog-post">
             <div class="thumbnail">
            <img src="images/MacbookM2.jpg" alt="">
@@ -120,15 +120,83 @@
    
              </div>
            </div>
-           <div class="pagination">
+           <div class="blog-post">
+            <div class="thumbnail">
+           <img src="images/ps5.jpg" alt="">
+            </div>
+            <div class="blog-content">
+           <span>Tech - 12/2/2021</span>
+           <h3>Playstation 5 goes on sale</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
+             <a href="">Read more</a>
+   
+             </div>
+           </div>
+           <div class="blog-post">
+            <div class="thumbnail">
+           <img src="images/ps5.jpg" alt="">
+            </div>
+            <div class="blog-content">
+           <span>Tech - 12/2/2021</span>
+           <h3>Playstation 5 goes on sale</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
+             <a href="">Read more</a>
+   
+             </div>
+           </div>
+           <div class="blog-post">
+            <div class="thumbnail">
+           <img src="images/ps5.jpg" alt="">
+            </div>
+            <div class="blog-content">
+           <span>Tech - 12/2/2021</span>
+           <h3>Playstation 5 goes on sale</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
+             <a href="">Read more</a>
+   
+             </div>
+           </div>
+           <div class="blog-post">
+            <div class="thumbnail">
+           <img src="images/ps5.jpg" alt="">
+            </div>
+            <div class="blog-content">
+           <span>Tech - 12/2/2021</span>
+           <h3>Playstation 5 goes on sale</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
+             <a href="">Read more</a>
+   
+             </div>
+           </div>
+           <div class="blog-post">
+            <div class="thumbnail">
+           <img src="images/ps5.jpg" alt="">
+            </div>
+            <div class="blog-content">
+           <span>Tech - 12/2/2021</span>
+           <h3>Playstation 5 goes on sale</h3>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At delectus ullam sit dignissimos ab eos voluptatum numquam, atque exercitationem voluptates recusandae, corrupti quod distinctio perspiciatis?</p>
+             <a href="">Read more</a>
+   
+             </div>
+           </div>
+
+          
+          
+          
+          
+           
+           
+           <!-- <div class="pagination">
             <a href="">&laquo;</a>
             <a href="" class="active">1</a>
             <a href="">2</a>
             <a href="">3</a>
             <a href="">4</a>
             <a href="">&raquo;</a>
-           </div> 
+           </div>  -->
         </div>
+       
         <aside>
             <div class="commented-posts">
                 <header>
@@ -247,7 +315,26 @@
            </div>
         </aside>
         </main>
-    </div>
+
+        <!-- Load more button -->
+        <button class="btn">Load more</button>
+    </div> 
+   
+        
+ <!-- </div> -->
+ <script src="app.js"></script>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    // $(document).ready(function(){
+
+    
+     $('.blog-post').slice(0,4).show();
+     $('.btn').on("click",function(){
+         $('.blog-post:hidden').slice(0,4).slideDown('slow');
+        //  return false;
+     }); 
+    // });
+ </script>
 
     <footer>
         <div class="site-container">
@@ -292,6 +379,6 @@
         </div>
     </footer>
 
-    <script src="app.js"></script>
+   
 </body>
 </html>
